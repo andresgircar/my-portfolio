@@ -60,7 +60,7 @@ main .main-section .astronaut-img {
     position: absolute;
     bottom: -10rem;
     z-index: 3;
-    animation: space-moving 5s infinite ease;
+    animation: space-moving 5s infinite ease-in-out;
 }
 
 @keyframes space-moving {
@@ -73,7 +73,7 @@ main .main-section .astronaut-img {
     60% {
         transform: translate(0rem, 1rem);
     }
-    80% {
+    100% {
         transform: translate(0rem, 0rem);
     }
 }

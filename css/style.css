@@ -178,6 +178,7 @@ main .my-skills-section .skill-container p {
     position: fixed;
     right: -2rem;
     top: 14rem;
+    animation: space-moving 8s infinite ease;
 }
 
 .social-links-container .satelite {
