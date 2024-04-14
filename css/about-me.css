@@ -1,0 +1,60 @@
+main .about-me-section {
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('../img/heroBg.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+main .about-me-section h2{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+main .about-me-section .about-me {
+    padding: 6rem 0 2.5rem;
+    position: relative;
+}
+
+main .about-me-section .about-me::before {
+    content: "ABOUT ME";
+    opacity: 0.2;
+    font-size: 8rem;
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
+}
+
+main .about-me-section p {
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.about-me-section .hobbies-title {
+    padding-bottom: 2rem;
+}
+
+main .about-me-section .hobbies-container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.hobbies-container .hobbie {
+    text-align: center;
+}
+
+.hobbies-container .hobbie img {
+    width: 8rem;
+    margin-bottom: 1rem;
+}
+
+.hobbies-container .hobbie h4 {
+    font-size: 1.6rem;
+    color: white;
+}

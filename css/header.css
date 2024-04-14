@@ -1,0 +1,55 @@
+/*Estilos del header*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    padding-top: 1rem;
+}
+
+header a .logo {
+    width: 18rem;
+}
+
+header nav {
+    padding: 0 9rem;
+}
+
+header nav li {
+    display: inline;
+    list-style: none;
+    font-size: 1.8rem;
+}
+header nav li:first-child {
+    padding-right: 4rem;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: white;
+    transition: ease .5s;
+}
+
+header nav li a:hover {
+    color: #DF2668;
+}
+
+header nav li a:hover::before {
+    content: "";
+    animation: a-hover 1s linear;
+    position: absolute;
+    bottom: 25px;
+}
+
+@keyframes a-hover {
+    0% {
+        width: .5rem;
+        height: 2px;
+        background-color: #DF2668;
+    }
+    60% {
+        width: 16rem;
+    }
+}
