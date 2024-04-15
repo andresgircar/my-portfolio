@@ -331,6 +331,17 @@ main .my-skills-section .skill-container p {
     .main-section .planet-img {
         width: 20%;
     }
+    /*About me section responsive adjust*/
+    main .about-me-section p {
+        font-size: 1.5rem;
+        max-width: 80%;
+    }    
+    .hobbies-container .hobbie img {
+        width: 6rem;
+    }
+    .hobbies-container .hobbie h4 {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -340,7 +351,7 @@ main .my-skills-section .skill-container p {
     }
     /*Main section responsive design*/
     main .main-section .text h1 {
-        padding: 0 0 3rem;
+        padding: 2rem 0 3rem;
         font-size: 2.6rem;
     }
     main .main-section .text h3 {
@@ -351,9 +362,85 @@ main .my-skills-section .skill-container p {
     }
     main .main-section .astronaut-img {
         width: 40%;
+        bottom: 2rem;
     }
     .main-section .planet-img {
         width: 30%;
+    }
+    /*About me section responsive adjust*/
+    main .about-me-section h2{
+        font-size: 2rem;
+    }
+    
+    main .about-me-section .about-me::before {
+        font-size: 3.1rem;
+        bottom: 3rem;
+    }
+    main .about-me-section p {
+        font-size: 1.3rem;
+        max-width: 90%;
+    }
+    .about-me-section .hobbies-title {
+        padding-bottom: 1.6rem;
+    }
+    main .about-me-section .hobbies-container {
+        width: 85%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .hobbies-container .hobbie img {
+        width: 3.5rem;
+    }
+    
+    .hobbies-container .hobbie h4 {
+        font-size: 1.2rem;
+    }
+    /*My skills section*/
+    main .my-skills-section .skills-containers {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main .my-skills-section .skills-title {
+        font-size: 2rem;
+    }
+    main .my-skills-section .skills-title::before {
+        font-size: 3.1rem;
+        bottom: 3rem;
+    }
+    main .my-skills-section .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+    }
+    main .my-skills-section .skill-container {
+        flex-direction: column;
+    }
+    
+    main .my-skills-section .skill-container img {
+        width: 4rem;
+    }
+    main .my-skills-section .skill-container section {
+        padding: .5rem 1rem;
+    }
+    
+    main .my-skills-section .skill-container h3 {
+        font-size: 1.5rem;
+    }
+    
+    main .my-skills-section .skill-container p {
+        color: white;
+        font-size: 1.2rem;
+    }
+    /*Portfolio section*/
+    main .portfolio-section .portfolio-title {
+        font-size: 2rem;
+    }
+    
+    main .portfolio-section .portfolio-title::before {
+        font-size: 3.1rem;
+        bottom: 3rem;
     }
     /*Satelite responsive adjust*/
     .social-links-container .satelite {
