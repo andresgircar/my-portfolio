@@ -475,11 +475,7 @@ main .my-skills-section .skill-container p {
         width: 3rem;
         height: 4.8rem;
         border-radius: 1.7rem;
-        position: absolute;
-        bottom: 3rem;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 4;
+        bottom: 10rem;
     }
     
     .scroll-button::before {
