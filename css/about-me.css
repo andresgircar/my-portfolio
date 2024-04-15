@@ -25,7 +25,8 @@ main .about-me-section .about-me::before {
 
 main .about-me-section p {
     font-size: 1.6rem;
-    color: white;
+    font-weight: 400;
+    color: rgb(224, 224, 224);
     text-align: center;
     max-width: 60%;
     margin: 0 auto;
