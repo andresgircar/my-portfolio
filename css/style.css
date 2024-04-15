@@ -5,12 +5,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
     font-family: 'Orbitron', sans-serif;
     font-size: 62.5%;
-    box-sizing: border-box;
 }
 
 main {
@@ -193,6 +193,10 @@ main .my-skills-section .skill-container p {
     transform: rotate(45deg);
 }
 
+.social-links-container .github img, .twitter img, .linkedin img {
+    width: 4rem;
+}
+
 .social-links-container .github {
     position: absolute;
     left: -6.5rem;
@@ -208,10 +212,6 @@ main .my-skills-section .skill-container p {
     100% {
         opacity: 1;
     }
-}
-
-.social-links-container .github img, .twitter img, .linkedin img {
-    width: 4rem;
 }
 
 .social-links-container .linkedin {
@@ -263,4 +263,112 @@ main .my-skills-section .skill-container p {
     border-radius: 50%;
     box-shadow: 0 0 2rem #2696e8,
     0 0 8rem white, 0 0 12rem #2696e8;
+}
+
+/*Responsive design*/
+
+@media screen and (max-width: 1120px) {
+    /*Header responsive design*/
+    header a .logo {
+        width: 16rem;
+    }
+    header nav {
+        padding: 0 6rem;
+    }
+    header nav li {
+        font-size: 1.6rem;
+    }
+    /*Main section responsive design*/
+    main .main-section .text h1 {
+        padding: 6rem 0;
+        font-size: 3.2rem;
+    }
+    main .main-section .text h3 {
+        font-size: 2rem;
+    }
+    
+    main .main-section .text h4 {
+        font-size: 1.2rem;
+    }
+    main .main-section .profile-pic {
+        width: 27%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    /*Header responsive design*/
+    header {
+        justify-content: space-between;
+        padding: 2rem 2.5rem 0;
+    }
+    header nav {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    /*Main section responsive design*/
+    main .main-section .text h1 {
+        padding: 4rem 0;
+        font-size: 2.8rem;
+    }
+    main .main-section .text h3 {
+        font-size: 1.8rem;
+    }
+    
+    main .main-section .text h4 {
+        font-size: 1.2rem;
+    }
+    main .main-section .profile-pic {
+        width: 30% ;
+        top: 22%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    main .main-section .astronaut-img {
+        width: 40%;
+    }
+    .main-section .planet-img {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /*Header responsive design*/
+    header a .logo {
+        width: 13rem;
+    }
+    /*Main section responsive design*/
+    main .main-section .text h1 {
+        padding: 0 0 3rem;
+        font-size: 2.6rem;
+    }
+    main .main-section .text h3 {
+        font-size: 1.6rem;
+    }
+    main .main-section .profile-pic {
+        width: 40% ;
+    }
+    main .main-section .astronaut-img {
+        width: 40%;
+    }
+    .main-section .planet-img {
+        width: 30%;
+    }
+    /*Satelite responsive adjust*/
+    .social-links-container .satelite {
+        width: 6.8rem;
+    }
+    .social-links-container .github img, .twitter img, .linkedin img {
+        width: 3rem;
+    }
+    .social-links-container .github {
+    left: -4.5rem;
+    }
+    .social-links-container .linkedin {
+    left: -1.5rem;
+    }
+    .social-links-container .twitter {
+    left: -1.5rem;
+    }
 }

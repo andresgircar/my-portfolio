@@ -27,7 +27,7 @@ main .main-section .text {
 }
 
 main .main-section .text h1 {
-    padding: 8rem 0 8rem;
+    padding: 8rem 0;
     font-size: 4.2rem;
     text-align: center;
 }
