@@ -1,12 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
     const satelite = document.getElementById('satelite');
     const redesSociales = document.getElementById('redes-sociales');
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const closeIcon = document.querySelector('.close-icon');
 
     satelite.addEventListener('click', function() {
         satelite.classList.toggle('satelite-rotation')
         redesSociales.classList.toggle('hidden');
-        redesSociales.classList.toggle('mostrar-redes'); // Agregar o quitar la clase para mostrar las redes sociales
     });
+
+    hamburgerMenu.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+    })
+
+    closeIcon.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+    })
 });
 
 //cursor follow
