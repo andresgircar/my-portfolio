@@ -49,6 +49,16 @@ main section {
     animation: scroll-moving 3s infinite ease;
 }
 
+.scroll-button::after {
+    content: "SCROLL";
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1rem;
+}
+
 @keyframes scroll-moving {
     60% {
         transform: translate(-50%, 4rem);
@@ -362,10 +372,11 @@ main .my-skills-section .skill-container p {
     }
     main .main-section .astronaut-img {
         width: 40%;
-        bottom: 2rem;
+        bottom: 8rem;
     }
     .main-section .planet-img {
         width: 30%;
+        bottom: 2rem;
     }
     /*About me section responsive adjust*/
     main .about-me-section h2{
@@ -457,5 +468,22 @@ main .my-skills-section .skill-container p {
     }
     .social-links-container .twitter {
     left: -1.5rem;
+    }
+    /*Scrol icon adjustment*/
+    .scroll-button {
+        border: 0.3rem solid white;
+        width: 3rem;
+        height: 4.8rem;
+        border-radius: 1.7rem;
+        position: absolute;
+        bottom: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 4;
+    }
+    
+    .scroll-button::before {
+        width: .6rem;
+        height: .6rem;
     }
 }
