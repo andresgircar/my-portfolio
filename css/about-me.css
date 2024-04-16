@@ -2,10 +2,10 @@ main .about-me-section {
     background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('../img/herobg.png') no-repeat center;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
-main .about-me-section h2{
+main .about-me-section .about-me{
     font-size: 3rem;
     color: white;
     text-align: center;
@@ -24,17 +24,22 @@ main .about-me-section .about-me::before {
 }
 
 main .about-me-section p {
-    font-size: 1.6rem;
+    font-family: 'Fira Code', monospace;
+    font-size: 1.5rem;
     font-weight: 400;
     color: rgb(224, 224, 224);
     text-align: center;
-    max-width: 60%;
+    max-width: 85%;
     margin: 0 auto;
     padding-bottom: 2rem;
 }
 
-.about-me-section .hobbies-title {
-    padding-bottom: 2rem;
+.about-me-section .hobbies-title, .education-title {
+    font-size: 3rem;
+    color: var(--main-color);
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
 }
 
 main .about-me-section .hobbies-container {
@@ -42,6 +47,7 @@ main .about-me-section .hobbies-container {
     justify-content: center;
     gap: 5rem;
     width: 100%;
+    padding-bottom: 2rem;
 }
 
 .hobbies-container .hobbie {
@@ -49,11 +55,13 @@ main .about-me-section .hobbies-container {
 }
 
 .hobbies-container .hobbie img {
-    width: 8rem;
+    width: 6rem;
     margin-bottom: 1rem;
 }
 
 .hobbies-container .hobbie h4 {
+    font-family: 'Fira Code', monospace;
     font-size: 1.6rem;
     color: white;
+    font-weight: 400;
 }

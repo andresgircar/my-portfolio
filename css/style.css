@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --main-color: #DF2668;
 }
 
 :root {
@@ -178,6 +179,27 @@ main {
     main .main-section .profile-pic {
         width: 27%;
     }
+    /*Skills section*/
+    main .my-skills-section .skills-title::before {
+        font-size: 7rem;
+    }
+    /*Portfolio section*/
+    main .portfolio-section .portfolio-projects-container {
+        width: 100%;
+    }
+    main .portfolio-section .portfolio-projects-container .portfolio-project {
+        width: 25%;
+        height: 18rem;
+    }
+    main .portfolio-section .portfolio-projects-container .portfolio-project .project-img {
+        height: 60%;
+    }
+    main .portfolio-section .portfolio-projects-container .portfolio-project h3{
+        font-size: 1.6rem;
+    }
+    main .portfolio-section .portfolio-projects-container .portfolio-project .skill {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 950px) {
@@ -217,6 +239,10 @@ main {
         width: 20%;
     }
     /*About me section responsive adjust*/
+    main .about-me-section .about-me::before {
+        font-size: 6rem;
+        bottom: 1.5rem;
+    }
     main .about-me-section p {
         font-size: 1.5rem;
         max-width: 80%;
@@ -226,6 +252,46 @@ main {
     }
     .hobbies-container .hobbie h4 {
         font-size: 1.5rem;
+    }
+    /*Skills section*/
+    main .my-skills-section .skills-containers {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main .my-skills-section .skills-title::before {
+        font-size: 6rem;
+    }
+    main .my-skills-section .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+    }
+    main .my-skills-section .skill-container {
+        flex-direction: column;
+    }
+    main .my-skills-section .skill-container img {
+        width: 5.5rem;
+    }
+    /*Portfolio section*/
+    main .portfolio-section {
+        height: auto;
+    }
+    main .portfolio-section .portfolio-projects-container {
+        padding-bottom: 2rem;
+    }
+    main .portfolio-section .portfolio-projects-container .portfolio-project {
+        width: 40%;
+        height: 18rem;
+    }
+    main .portfolio-section .portfolio-projects-container .portfolio-project .project-img {
+        height: 60%;
+    }
+    main .portfolio-section .portfolio-projects-container .portfolio-project h3{
+        font-size: 1.5rem;
+    }
+    main .portfolio-section .portfolio-projects-container .portfolio-project .skill {
+        font-size: 1.1rem;
     }
 }
 
@@ -254,7 +320,7 @@ main {
         bottom: 2rem;
     }
     /*About me section responsive adjust*/
-    main .about-me-section h2{
+    main .about-me-section .about-me{
         font-size: 2rem;
     }
     
@@ -283,27 +349,13 @@ main {
         font-size: 1.2rem;
     }
     /*My skills section*/
-    main .my-skills-section .skills-containers {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
     main .my-skills-section .skills-title {
         font-size: 2rem;
     }
     main .my-skills-section .skills-title::before {
         font-size: 3.1rem;
         bottom: 3rem;
-    }
-    main .my-skills-section .container {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem;
-        padding: 0 1rem;
-        margin-bottom: 1rem;
-    }
-    main .my-skills-section .skill-container {
-        flex-direction: column;
-    }
-    
+    }    
     main .my-skills-section .skill-container img {
         width: 4rem;
     }
@@ -327,6 +379,19 @@ main {
     main .portfolio-section .portfolio-title::before {
         font-size: 3.1rem;
         bottom: 3rem;
+    }
+    main .portfolio-section .portfolio-projects-container .portfolio-project {
+        width: 85%;
+        height: 20rem;
+    }
+    main .portfolio-section .portfolio-projects-container .portfolio-project .project-img {
+        height: 70%;
+    }
+    main .portfolio-section .portfolio-projects-container .portfolio-project h3{
+        font-size: 1.5rem;
+    }
+    main .portfolio-section .portfolio-projects-container .portfolio-project .skill {
+        font-size: 1.1rem;
     }
     /*Satelite responsive adjust*/
     .social-links-container .satelite {

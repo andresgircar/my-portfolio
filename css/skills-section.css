@@ -75,6 +75,7 @@ main .my-skills-section .skill-container h3 {
 }
 
 main .my-skills-section .skill-container p {
+    font-family: 'Fira Code', monospace;
     color: white;
     font-size: 1.4rem;
 }
