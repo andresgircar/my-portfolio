@@ -98,7 +98,7 @@ header nav li a:hover::before {
 }
 
 .mobile-menu .nav li a {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #DF2668;
     text-decoration: none;
     font-weight: 500;
@@ -127,10 +127,10 @@ header nav li a:hover::before {
 
 .mobile-menu .close-menu-icon {
     position: absolute;
-    top: 5rem;
-    right: 5rem;
-    width: 5rem;
-    height: 5rem;
+    top: 3rem;
+    right: 3rem;
+    width: 4rem;
+    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,7 +138,7 @@ header nav li a:hover::before {
 
 .mobile-menu .close-menu-icon .close-icon {
     margin: 0;
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-weight: 300;
     cursor: pointer;
 }
