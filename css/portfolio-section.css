@@ -19,11 +19,10 @@ main .portfolio-section .portfolio-title {
     text-align: center;
     padding: 6rem 0 2.5rem;
     position: relative;
-    z-index: 30;
 }
 
 main .portfolio-section .portfolio-title::before {
-    content: "PORTFOLIO";
+    content: "PORTAFOLIO";
     opacity: 0.2;
     font-size: 8rem;
     position: absolute;
@@ -33,8 +32,6 @@ main .portfolio-section .portfolio-title::before {
 }
 
 main .portfolio-section .portfolio-projects-container {
-    position: relative;
-    z-index: 31;
     width: 90%;
     display: flex;
     justify-content: center;

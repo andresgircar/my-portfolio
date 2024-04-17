@@ -14,7 +14,7 @@
 }
 
 .contact-section .contact-title::before {
-    content: "CONTACT ME";
+    content: "CONTÁCTAME";
     opacity: 0.2;
     font-size: 8rem;
     position: absolute;

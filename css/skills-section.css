@@ -15,7 +15,7 @@ main .my-skills-section .skills-title {
 }
 
 main .my-skills-section .skills-title::before {
-    content: "MY SKILLS";
+    content: "HABILIDADES";
     opacity: 0.2;
     font-size: 8rem;
     position: absolute;
@@ -28,7 +28,6 @@ main .my-skills-section .skills-bg {
     width: 100%;
     position: absolute;
     bottom: 0;
-    z-index: 10;
 }
 
 main .my-skills-section .skills-containers {
@@ -37,7 +36,7 @@ main .my-skills-section .skills-containers {
     justify-content: space-around;
     height: 60vh;
     align-items: center;
-    z-index: 11;
+    z-index: 1;
 }
 
 main .my-skills-section .container {

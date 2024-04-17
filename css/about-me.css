@@ -14,7 +14,7 @@ main .about-me-section .about-me{
 }
 
 main .about-me-section .about-me::before {
-    content: "ABOUT ME";
+    content: "SOBRE MÍ";
     opacity: 0.2;
     font-size: 8rem;
     position: absolute;
