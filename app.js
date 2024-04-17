@@ -59,7 +59,7 @@ function getToken() {
     grecaptcha.ready(function() {
         grecaptcha.execute('6Lc8eb4pAAAAAEV_Jgap_2tR2yrp_SEcRC88eR8c', {action: 'submit'}).then(function(token) {
             // Agrega el token como un campo oculto al formulario
-            document.getElementById('contact-form').insertAdjacentHTML('beforeend', '<input type="hidden" name="recaptcha_token" value="6Lc8eb4pAAAAAEV_Jgap_2tR2yrp_SEcRC88eR8c">');
+            document.getElementById('contact-form').insertAdjacentHTML('beforeend', '<input type="hidden" name="recaptcha_token" value="value="' + token + '">');
             
             // Envía el formulario
             document.getElementById('contact-form').submit();
