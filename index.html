@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lc8eb4pAAAAAEV_Jgap_2tR2yrp_SEcRC88eR8c"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -271,7 +272,7 @@
             <h2 class="contact-title">Contacto</h2>
             <div class="form-wraper">
                 <img src="img/contactImg.jpg" alt="">
-                <form action="">
+                <form id="contact-form" action="https://formsubmit.co/5a733cf51dead380a3de344003efe9c2" method="POST">
                     <h3>Descubre como puedo ayudarte</h3>
                     <label for="name">Nombre:</label>
                     <input id="name" name="name" type="text" placeholder="Tu nombre y apellido" required>
@@ -282,6 +283,9 @@
                     <label for="mensaje">Mensaje:</label>
                     <textarea name="mensaje" id="" cols="20" rows="2" placeholder="Hola, deseo contratar tus servicios"></textarea>
                     <input type="submit" id="submit" value="ENVIAR">
+
+                    <input type="hidden" name="_next" value="https://my-portfolio-xi-bice.vercel.app/">
+                    <input type="hidden" name="_captcha" value="true">
                 </form>
             </div>
         </section>
