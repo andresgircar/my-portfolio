@@ -84,6 +84,7 @@ header nav li a:hover::before {
     height: 100vh;
     background: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     display: flex;
     flex-direction: column;
     justify-content: center;
