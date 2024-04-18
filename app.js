@@ -55,7 +55,8 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('contact-form').insertAdjacentHTML('beforeend', inputToken);
             
             // Envía el formulario
-            document.getElementById('contact-form').submit();
+            var form = document.getElementById('contact-form');
+            form.submit();
         });
     });
     }
@@ -66,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
     event.preventDefault();
     
     // Llama a la función getToken() para obtener el token de reCAPTCHA v3
-    getToken();
+    getTokenAndSubmitForm();
     });
 });
 
