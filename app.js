@@ -45,30 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
             // Cierre del menú
         });
     });
-
-    // Función para obtener el token de reCAPTCHA v3
-    function getTokenAndSubmitForm() {
-    grecaptcha.ready(function() {
-        grecaptcha.execute('6Lc8eb4pAAAAAEV_Jgap_2tR2yrp_SEcRC88eR8c', {action: 'submit'}).then(function(token) {
-            // Agrega el token como un campo oculto al formulario
-            var inputToken = '<input type="hidden" name="recaptcha_token" value="' + token + '">';
-            document.getElementById('contact-form').insertAdjacentHTML('beforeend', inputToken);
-            
-            // Envía el formulario
-            var form = document.getElementById('contact-form');
-            form.submit();
-        });
-    });
-    }
-
-    //Recaptcha v3
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-    // Previene el envío del formulario por defecto
-    event.preventDefault();
-    
-    // Llama a la función getToken() para obtener el token de reCAPTCHA v3
-    getTokenAndSubmitForm();
-    });
 });
 
 //cursor follow
