@@ -46,16 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    //Recaptcha v3
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        // Previene el envío del formulario por defecto
-        event.preventDefault();
-        
-        // Llama a la función getToken() para obtener el token de reCAPTCHA v3
-        getToken();
-    });
     // Función para obtener el token de reCAPTCHA v3
-function getToken() {
+    function getToken() {
     grecaptcha.ready(function() {
         grecaptcha.execute('6Lc8eb4pAAAAAEV_Jgap_2tR2yrp_SEcRC88eR8c', {action: 'submit'}).then(function(token) {
             // Agrega el token como un campo oculto al formulario
@@ -65,7 +57,16 @@ function getToken() {
             document.getElementById('contact-form').submit();
         });
     });
-}
+    }
+
+    //Recaptcha v3
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        // Previene el envío del formulario por defecto
+        event.preventDefault();
+        
+        // Llama a la función getToken() para obtener el token de reCAPTCHA v3
+        getToken();
+    });
 });
 
 //cursor follow
