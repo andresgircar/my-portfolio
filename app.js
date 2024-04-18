@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Función para obtener el token de reCAPTCHA v3
-    function getToken() {
+    function getTokenAndSubmitForm() {
     grecaptcha.ready(function() {
         grecaptcha.execute('6Lc8eb4pAAAAAEV_Jgap_2tR2yrp_SEcRC88eR8c', {action: 'submit'}).then(function(token) {
             // Agrega el token como un campo oculto al formulario
